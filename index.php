@@ -180,6 +180,7 @@ mysqli_close($conn);
                     <button onclick="deleteAction(<?= $row["id"]; ?>)" class="btn btn-danger">Delete</button>
                     <form action="edit.php" method="post">
                       <input type="text" name="edit-id" <?= "value=" . "'{$row["id"]}'"; ?> style="display: none;" />
+                      <?php /* To edit page */ ?>
                       <button type="submit" class="btn btn-secondary">Edit</button>
                     </form>
                   </div>
@@ -224,6 +225,7 @@ mysqli_close($conn);
 </div>
 
 <script type="text/javascript">
+  // Delete confirmation function
   function deleteAction(id) {
     Swal.fire({
       title: 'Are you sure?',

@@ -10,6 +10,7 @@ $table = "tasks";
 $data;
 $result;
 
+// Check if there's parameterss edit-id
 if (!isset($_POST["edit-id"])) {
   $no_data = true;
 } else {
