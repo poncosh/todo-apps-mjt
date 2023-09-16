@@ -68,11 +68,11 @@ $activities = query("SELECT * FROM $table LIMIT $active_data, $activities_per_pa
 // Search
 if (isset($_GET["search"])) {
   $keyword = $_GET["search"];
-  $check_data = count(query("SELECT * FROM $table WHERE $table.`title` LIKE '%$keyword%' OR $table.`description` LIKE '%$keyword'"));
+  $check_data = count(query("SELECT * FROM $table WHERE $table.`title` LIKE '%$keyword%' OR $table.`description` LIKE '%$keyword%' OR $table.`status` LIKE '%$keyword%'"));
   $total_pages = ceil($check_data / $activities_per_page);
   $active_data = ($activities_per_page * $active_page) - $activities_per_page;
 
-  $activities = query("SELECT * FROM $table WHERE $table.`title` LIKE '%$keyword%' OR $table.`description` LIKE '%$keyword' LIMIT $active_data, $activities_per_page");
+  $activities = query("SELECT * FROM $table WHERE $table.`title` LIKE '%$keyword%' OR $table.`description` LIKE '%$keyword%' OR $table.`status` LIKE '%$keyword%' LIMIT $active_data, $activities_per_page");
 }
 
 if ($check_data == 0) {
