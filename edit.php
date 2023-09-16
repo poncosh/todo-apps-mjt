@@ -20,6 +20,8 @@ if (!isset($_POST["edit-id"])) {
   $result = mysqli_fetch_assoc($data);
 }
 
+mysqli_close($conn);
+
 ?>
 
 <?php include("./components/header.php") ?>
