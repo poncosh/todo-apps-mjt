@@ -1,0 +1,17 @@
+SetEnv DB_HOST_NAME "localhost"
+SetEnv DB_USERNAME "root"
+SetEnv DB_PASSWORD ""
+SetEnv DB_NAME "mysql"
+
+<FilesMatch "\.php$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+<FilesMatch "index[0-9]?\.php$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+<FilesMatch "edit[0-9]?\.php$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
