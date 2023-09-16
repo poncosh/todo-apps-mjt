@@ -5,6 +5,9 @@ Fitur:
 - Search, Pagination
 - CRUD
 
+Note:
+- Saya tidak menggunakan class karena di dalam CRUD kali ini tidak terlalu rumit, sesuai prinsip YAGNI (You Ain't Gonna Need It)
+
 Link:
 
 https://github.com/poncosh/todo-apps-mjt/assets/74602380/1611f63a-3a53-4993-9506-4287fe2b5e5a
