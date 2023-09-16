@@ -7,8 +7,7 @@ Fitur:
 
 Link:
 
-
-
+https://github.com/poncosh/todo-apps-mjt/assets/74602380/1611f63a-3a53-4993-9506-4287fe2b5e5a
 
 ### 1. XAMPP Sebagai Webserver dan SQL Host
 
