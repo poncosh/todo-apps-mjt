@@ -6,6 +6,7 @@ Fitur:
 - CRUD
 
 Note:
+- Tanpa framework seperti CI/Laravel
 - Saya tidak menggunakan class karena di dalam CRUD kali ini tidak terlalu rumit, sesuai prinsip YAGNI (You Ain't Gonna Need It)
 
 Link:
