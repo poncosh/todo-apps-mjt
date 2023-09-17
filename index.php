@@ -154,7 +154,7 @@ mysqli_close($conn);
             </tr>
           </thead>
           <tbody>
-            <?php $index = 0; ?>
+            <?php $index = $active_data; ?>
             <?php foreach ($activities as $row) : ?>
               <tr>
                 <td scope="row"><?= $index + 1; ?></td>
